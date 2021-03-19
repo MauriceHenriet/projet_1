@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+footer {
+  /* background: yellow;
+  width: 80%; */
+  margin: auto;
+}
+#sectionL {
+  display: none;
+}
+#insta {
+  width: 175px;
+  height: 60px;
+  background: url(assets/32f0a4f27407.png) no-repeat center/ cover;
+  background-position: 0 -129px;
+  background-size: 440px 415px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+form button {
+  margin: 10px 20px;
+  background: turquoise;
+  border-radius: 10px;
+  color: white;
+  padding: 8px;
+}
+form button:disabled {
+  opacity: 0.6;
+}
+
+#divider {
+  margin-left: 20px;
+  margin-right: 20px;
+  /* background: green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar {
+  border-top: 1px grey solid;
+  width: 35%;
+  height: 2px;
+  margin: auto;
+}
+#divider p {
+  margin: auto;
+}
+#face {
+  margin: 20px auto;
+}
+#face a {
+  text-decoration: none;
+  color: grey;
+}
+#face i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: grey;
+}
+#forgot {
+  margin: 0 auto 20px auto;
+}
+#forgot a {
+  text-decoration: none;
+  color: black;
+}
+#subscribe {
+  margin: 25px 25px;
+  /* background: greenyellow; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#subscribe a {
+  text-decoration: none;
+  color: teal;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-left: 1em;
+}
+#dl_app {
+  margin-bottom: 20px;
+  /* background: green; */
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#dl_app img {
+  margin-top: 10px;
+  width: 48%;
+}
+#dl_app div {
+  /* background-color: pink; */
+  text-align: center;
+}
+.foot_link {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foot_link a {
+  text-decoration: none;
+  color: black;
+  margin: 0 8px 8px;
+  font-size: 0.85em;
+  text-transform: capitalize;
+}
+#foot_foot {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#foot_foot select {
+  margin-right: 1em;
+}
+
+@media screen and (min-width: 450px) {
+  #bordure {
+    padding: 54px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+    margin-top: 5em;
+  }
+  #subscribe {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+    margin-top: 20px;
+  }
+  #dl_app {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #dl_app img {
+    width: 30%;
+  }
+  main {
+    margin-bottom: 5em;
+  }
+}
+@media screen and (min-width: 1005px) {
+  /* 
+  Mettre tout le code de base exprimé en em 
+  avec un body{font-size :12px}pour smartphone et tablette
+  */
+
+  /*
+  Pour le desk-top mettre ici :  body{  font-size:14px }
+  */
+
+  #sectionL {
+    display: inline;
+    padding-top: 5em;
+    margin-right: 2em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
